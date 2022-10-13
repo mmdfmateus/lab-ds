@@ -11,7 +11,6 @@ export interface TextProps {
 export const Text = ({ size = 'md', children, asChild }: TextProps) => {
   const Comp = asChild ? Slot : 'span';
   return (
-    // <span className='text-gray-100 font-sans'>Text</span>
     <Comp 
       className={clsx(
         'text-gray-100 font-sans',
